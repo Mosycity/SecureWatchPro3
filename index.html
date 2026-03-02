@@ -28,6 +28,7 @@ header{display:flex;align-items:center;justify-content:space-between;padding:11p
   border-bottom:1px solid var(--border);background:var(--header-bg);backdrop-filter:blur(12px);
   position:sticky;top:0;z-index:100;gap:10px;flex-wrap:wrap}
 .logo{display:flex;align-items:center;gap:9px}
+.logo-img{height:45px;width:auto;filter:drop-shadow(0 0 6px rgba(0,229,255,0.5))}
 .logo-icon{width:28px;height:28px;background:var(--accent);
   clip-path:polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);animation:pulse-hex 3s infinite;flex-shrink:0}
 @keyframes pulse-hex{0%,100%{box-shadow:0 0 0 0 rgba(0,229,255,.4)}50%{box-shadow:0 0 0 8px rgba(0,229,255,0)}}
@@ -358,8 +359,8 @@ header{display:flex;align-items:center;justify-content:space-between;padding:11p
 <body>
 
 <header>
-  <div class="logo">
-    <div class="logo-icon"></div>
+  <div class="logo" onclick="location.reload()" style="cursor:pointer">
+    <img src="logo.png" alt="SecureWatchPro Logo" class="logo-img">
     <div class="logo-text">Secure<span>WatchPro</span></div>
   </div>
   <div class="header-right">
